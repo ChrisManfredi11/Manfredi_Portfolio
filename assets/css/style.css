@@ -1,0 +1,144 @@
+
+
+#AboutMe {
+   background: #1F1F1F url(../img/portfolio/cruisebackground.jpg) no-repeat center bottom;
+   background-size: cover !important;
+	-webkit-background-size: cover !important;
+   background-attachment: fixed;
+
+   position: relative;
+   min-height: 800px;
+   width: 100%;
+   overflow: hidden;
+}
+
+.profilepic {
+   width: 150px;
+   height: 150px;
+   border-radius: 100%;
+}
+
+.transparentsection {
+	background:rgba(0,0,0,0.5);
+	color: white;
+	width: 100%;
+	margin: 55% 0 0 0;
+	padding: 5%;
+}
+
+
+#AboutMe {
+  background-color: ''  
+  color: black;
+}
+#AboutMe .btn {
+  margin-right: 20px;
+}
+#AboutMe img {
+  max-width: 100%;
+}
+#AboutMe p {
+  padding: 50px 0;
+}
+
+#ContactMe {
+	padding: 10% 5%;
+	background: url('../img/portfolio/new_year_background.png');
+
+}
+
+#copyright {
+	padding: 5%;
+}
+
+#MySkills {
+	padding: 10% 5%;
+}
+
+	@media only screen and (max-width : 1440px) {
+
+	.navbar-header {
+		background-color: red;
+	}
+
+	.transparentsection {
+		margin: 65% 0 0 0;
+	}
+
+	}
+
+	/* Large Devices, Wide Screens */
+	@media only screen and (max-width : 1200px) {
+
+	.transparentsection {
+		margin: 90% 0 0 0;
+		padding: 10% 0;
+	}
+
+
+	.navbar-header {
+		background-color: orange;
+	}
+
+	}
+
+	/* Medium Devices, Desktops */
+	@media only screen and (max-width : 992px) {
+
+	.transparentsection {
+		margin: 100% 0 0 0;
+		padding: 10% 0;
+	}
+
+	.navbar-header {
+		background-color: purple;
+	}
+
+	}
+
+	/* Small Devices, Tablets */
+	@media only screen and (max-width : 768px) {
+
+	.transparentsection {
+		margin: 150% 0 0 0;
+		padding: 10% 0;
+	}
+
+	.navbar-header {
+		background-color: yellow;
+	}
+
+	}
+
+	/* Extra Small Devices, Phones */ 
+	@media only screen and (max-width : 480px) {
+
+	.educationpic {
+		margin: 10% 0 10% 0;
+	}
+
+	.myskillimg {
+		width: 50%;
+		margin: 5% 0 0 0;
+	}
+
+	.profilepic {
+		margin: 10% 0 0 5%;
+	}
+	.transparentsection {
+		margin: 185% 0 0 0;
+		padding: 10% 0;
+	}
+	#services {
+		padding: 10% 0;
+	}
+	.navbar-header {
+		background-color: green;
+	}
+
+	}
+
+	/* Custom, iPhone Retina */ 
+	@media only screen and (max-width : 320px) {
+
+	}
