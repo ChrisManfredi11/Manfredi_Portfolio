@@ -1,4 +1,31 @@
+/*--------------------  Headers / Font Section  ---------------------*/
 
+h1 {
+	font-family: 'Cabin', serif;
+}
+
+h2 {
+	font-family: 'Cabin', serif;
+}
+
+h3 {
+	font-family: 'Cabin', serif;
+}
+p {
+	font-family: 'Old Standard TT', serif;
+}
+
+a {
+	font-family: 'Cabin', serif;
+}
+
+/*--------------------  Home Section  ---------------------*/
+
+#Home {
+
+}
+
+/*--------------------  About Me Section  ---------------------*/
 
 #AboutMe {
    background: #1F1F1F url(../img/portfolio/cruisebackground.jpg) no-repeat center bottom;
@@ -12,11 +39,24 @@
    overflow: hidden;
 }
 
+#AboutMe .btn {
+  margin-right: 20px;
+}
+
+#AboutMe img {
+  max-width: 100%;
+}
+
+#AboutMe p {
+  padding: 50px 0;
+}
+
 .profilepic {
    width: 150px;
    height: 150px;
    border-radius: 100%;
 }
+
 
 .transparentsection {
 	background:rgba(0,0,0,0.5);
@@ -26,44 +66,75 @@
 	padding: 5%;
 }
 
+/*--------------------  Education Section  ---------------------*/
 
-#AboutMe {
-  background-color: ''  
-  color: black;
+#Education {
+	padding: 5% 0;
+	background: url(../img/portfolio/greybg.png);
+	color: white;
 }
-#AboutMe .btn {
-  margin-right: 20px;
+
+.educationpic {
+	margin: 0 0 10% 0;
 }
-#AboutMe img {
-  max-width: 100%;
+
+/*--------------------  MacBook Picture Section  ---------------------*/
+
+#MacBookSection {
+   background: #1F1F1F url(../img/portfolio/fullsailmacbook.jpg) no-repeat center bottom;
+   background-size: cover !important;
+	-webkit-background-size: cover !important;
+   background-attachment: fixed;
+
+   position: relative;
+   min-height: 800px;
+   width: 100%;
+   overflow: hidden;
 }
-#AboutMe p {
-  padding: 50px 0;
+
+/*--------------------  My Work Section  ---------------------*/
+
+#MyWork {
+	padding: 5% 0;
+
 }
+
+
+/*--------------------  MySkills Section  ---------------------*/
+
+#MySkills {
+	padding: 5% 0;
+}
+
+
+/*--------------------  Contact Me Section  ---------------------*/
 
 #ContactMe {
-	padding: 10% 5%;
+	padding: 5% 0;
 	background: url('../img/portfolio/new_year_background.png');
 
 }
 
+
+/*--------------------  Copyright Section  ---------------------*/
+
 #copyright {
-	padding: 5%;
+	padding: 5% 0;
+
 }
 
-#MySkills {
-	padding: 10% 5%;
-}
 
-	@media only screen and (max-width : 1440px) {
+/*--------------------  Media Queries ---------------------*/
 
-	.navbar-header {
-		background-color: red;
-	}
+	@media only screen and (max-width : 1445px) {
 
-	.transparentsection {
-		margin: 65% 0 0 0;
-	}
+		.transparentsection {
+			margin: 65% 0 0 0;
+		}
+
+		ul.nav {
+			margin: 0 0 0 25%;
+		}
 
 	}
 
@@ -75,9 +146,12 @@
 		padding: 10% 0;
 	}
 
+	#education {
+		padding: 5%;
+	}
 
-	.navbar-header {
-		background-color: orange;
+	ul.nav {
+		margin: 0 0 0 25%;
 	}
 
 	}
@@ -85,27 +159,31 @@
 	/* Medium Devices, Desktops */
 	@media only screen and (max-width : 992px) {
 
-	.transparentsection {
-		margin: 100% 0 0 0;
-		padding: 10% 0;
-	}
+		.transparentsection {
+			margin: 100% 0 0 0;
+			padding: 10% 0;
+		}
 
-	.navbar-header {
-		background-color: purple;
-	}
+		.navbar-brand {
+			margin: 7% 0 0 15%;
+		}
+
+		.topbar {
+			margin: 1% 0 0 0;
+		}
 
 	}
 
 	/* Small Devices, Tablets */
-	@media only screen and (max-width : 768px) {
+	@media only screen and (max-width : 767px) {
 
 	.transparentsection {
 		margin: 150% 0 0 0;
 		padding: 10% 0;
 	}
 
-	.navbar-header {
-		background-color: yellow;
+	.navbar-brand {
+		margin: 10% 0 0 25%;
 	}
 
 	}
@@ -132,8 +210,13 @@
 	#services {
 		padding: 10% 0;
 	}
-	.navbar-header {
-		background-color: green;
+
+	.nav {
+		height: 400px;
+	}
+
+	.navbar-brand {
+		margin: 14% 0 0 15%;
 	}
 
 	}

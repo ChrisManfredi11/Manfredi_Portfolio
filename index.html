@@ -26,6 +26,10 @@
         <link rel="stylesheet" type="text/css" href="assets/extras/animate.css">
         <link rel="stylesheet" type="text/css" href="assets/extras/lightbox.css">
 
+        <!-- Fonts -- >
+        <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Old+Standard+TT' rel='stylesheet' type='text/css'>
+
 
 
 
@@ -42,31 +46,33 @@
 
     <body data-spy="scroll" data-offset="20" data-target="#navbar">
     <!-- Nav Menu Section -->
-    <div class="logo-menu">
+    <div class="logo-menu" id="Home">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="50">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header col-md-3">
+        <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#home"> Chris Manfredi</a>
+          <a class="navbar-brand" href="#Home"> Christopher Manfredi </a>
         </div>
 
-        <div class="collapse navbar-collapse" id="navbar">
-                            <ul class="nav navbar-nav col-md-9 pull-right">
-                            <li class="active"><a href="#hero-area"><i class="fa fa-home"></i> Home</a></li>
-                            <li><a href="#services"><i class="fa fa-cogs"></i> About Me </a></li>
-                            <li><a href="#portfolio"><i class="fa fa-flask"></i> Education</a></li>
-                            <li><a href="#clients"><i class="fa fa-puzzle-piece"></i> My Stuff </a></li>
-                            <li><a href="#about"><i class="fa fa-info"></i> My</a></li>
-                            <li><a href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
-                            </ul>
+        <div class="row">
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="topbar"><a href="#home"><i class="fa fa-home"></i> Home </a></li>
+                    <li class="topbar"><a href="#aboutme"><i class="fa fa-cogs"></i> About Me </a></li>
+                    <li class="topbar"><a href="#Education"><i class="fa fa-flask"></i> Education</a></li>
+                    <li class="topbar"><a href="#portfolio"><i class="fa fa-puzzle-piece"></i> Work </a></li>
+                    <li class="topbar"><a href="#MySkills"><i class="fa fa-info"></i> Skills </a></li>
+                    <li class="topbar"><a href="#ContactMe"><i class="fa fa-envelope"></i> Contact Me</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </div>
     </nav>
     </div>
 <!-- Nav Menu Section End -->
@@ -74,11 +80,11 @@
 <section id="AboutMe">
     <div class="text-container text-center">
         <div class="row">
-            <div class="transparentsection col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <img class="profilepic" src="assets/img/portfolio/profilepic.jpeg" alt="">
+            <div id="aboutme" class="transparentsection col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <img class="profilepic" src="assets/img/portfolio/profilepicture.jpg" alt="">
 
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                    <a href="#" class="btn btn-common btn-lg">View Resume</a>
+                    <a href="assets/extras/Chris_Manfredi_Resume.pdf" class="btn btn-common btn-lg">View Resume</a>
                     </div>
 
 
@@ -92,13 +98,13 @@
 
 <!-- Hero Area Section -->
 
-<section id="services">
+<section id="Education">
 <div class="container text-center">
 <div class="row">
     
     <h1 class="title">Education</h1>
 
-        <div class="col-lg-6 col-md-4 col-sm-4 col-xs-12">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="service-item">
                 <img class="educationpic" src="assets/img/portfolio/highschool.png" alt="">
                     <h3>Stonington High School</h3>
@@ -106,7 +112,7 @@
             </div>
         </div>
 
-        <div class="col-lg-6 col-md-4 col-sm-4 col-xs-12">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="service-item">
                 <img class="educationpic" src="assets/img/portfolio/college.png" alt="">
                 <h3>Full Sail University</h3>
@@ -118,33 +124,67 @@
 </div>
 </section>
 
+<section id="MacBookSection">
+    <div class="text-container text-center">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+
+            </div>
+
+         </div> <!-- row ends -->
+
+       </div>  <!-- text-container ends -->
+
+   </section> <!-- Testimonials Section End-->
+
 <!-- Portfolio Section -->
 
-<section id="portfolio">
+<section id="MyWork">
     <div class="container text-center">
         <div class="row">
             
             <h1 class="title">My Work</h1>
 
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <h3> Field Finder </h3>
                 <div class="portfolio-item wow fadeInLeft" data-wow-delay=".5s">
                     <a href="https://www.google.com"><img src="assets/img/portfolio/fieldfinder.png" alt=""></a>
+                    <ul>
+                        <li> IOS Application </li>
+                        <li> React Native  </li>
+                        <li> Facebook Auth </li>
+                        <li> Google Places API </li>
+                        <li> Firebase </li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <h3> Pro Leet Peeps </h3>
                 <div class="portfolio-item wow fadeInLeft" data-wow-delay=".5s">
                     <a href="https://www.google.com"><img src="assets/img/portfolio/proleetpeeps.png" alt=""></a>
+                    <ul>
+                        <li> Bootstrap </li>
+                        <li> Facebook Auth </li>
+                        <li> Google Places API </li>
+                        <li> Firebase </li>
+                    </ul>
+
                 </div>
             </div>
 
 
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <h3> IMT Lease Abstracts </h3>
                 <div class="portfolio-item wow fadeInLeft" data-wow-delay=".5s">
                     <a href="http://chrismanfredi11.github.io/IMT/"><img src="assets/img/portfolio/imt.png" alt=""></a>
+                    <ul>
+                        <li> Bootstrap </li>
+                        <li> Facebook Auth </li>
+                        <li> Google Places API </li>
+                        <li> Firebase </li>
+                    </ul>
                 </div>
             </div>
         
@@ -258,7 +298,7 @@
 
     <div id="copyright">
     <div class="container text-center">
-    <div class="col-md-10 col-xs-12"><p>© Chris Manfredi 2016</p></div>
+    <div class="col-md-10 col-xs-12"><p>© Christopher Sean Manfredi 2016</p></div>
     <div class="col-md-2">
         <span class="to-top pull-right"><a href="#AboutMe"><i class="fa fa-angle-up fa-2x"></i></a></span>
         </div>
